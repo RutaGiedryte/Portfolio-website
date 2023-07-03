@@ -1,8 +1,8 @@
 :root{
     --color-primary: lavender;
-    --color-secondary: bisque;
+    --color-secondary: rgb(192, 122, 192);
     --color-white: white;
-    --color-grey: darkblue;
+    --color-grey: rgb(125, 125, 125);
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
@@ -80,6 +80,19 @@ section{
     background-color: blue;
 }
 
+.active{
+    display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0);
+        }
+        100%{
+            transform: translateY(0) scaleY(1);
+        }
+    }
+}
+
 .controls{
     position: fixed;
     z-index: 10;
@@ -90,6 +103,11 @@ section{
     transform: translateY(-50%);
     //align-items: center;
     //justify-content: center;
+
+    .active-btn{
+        background-color: var(--color-secondary) !important;
+        transition: all 0.1s ease-in-out;
+    }
     
     .control{
         padding: 1rem;
