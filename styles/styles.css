@@ -5,8 +5,23 @@
   --color-black: #000;
   --color-grey-1: #dbe1e8;
   --color-grey-2: #b2becd;
+  --color-grey-3: #b2becd;
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+}
+
+.light-mode {
+  --color-primary: #efefef;
+  --color-secondary: #965796;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey-1: #5c666e;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7278;
+  --color-grey-4: #31373d;
+  --color-grey-5: #f8f8f8;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
@@ -120,6 +135,30 @@ section {
   font-size: 1.2rem;
   pointer-events: none;
   color: var(--color-grey-2);
+}
+
+.theme-button {
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow-1);
+  transition: all 0.1s ease-in-out;
+}
+.theme-button:active {
+  transform: translateY(-5px);
+}
+.theme-button i {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
 }
 
 .header-content {
@@ -336,6 +375,7 @@ section {
   position: absolute;
   left: -27px;
   background-color: var(--color-secondary);
+  color: white;
   top: 0;
   width: 50px;
   height: 50px;
@@ -361,12 +401,12 @@ section {
   font-weight: 600;
 }
 .timeline .timeline-item h5 span {
-  color: var(--color-grey-2);
+  color: var(--color-grey-3);
   font-weight: 500;
   font-size: 1.2rem;
 }
 .timeline .timeline-item p {
-  color: var(--color-grey-2);
+  color: var(--color-grey-3);
 }
 
 .portfolio-text {
@@ -409,7 +449,7 @@ section {
 .portfolio-items .portfolio-item .hover-items h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: var(--color-white);
+  color: white;
 }
 .portfolio-items .portfolio-item .hover-items .icons {
   display: flex;
@@ -490,7 +530,7 @@ section {
   line-height: 2rem;
   padding-bottom: 1rem;
   font-size: 1rem;
-  color: var(--color-grey-2);
+  color: var(--color-grey-3);
 }
 
 .contact-content-container {
@@ -605,6 +645,7 @@ section {
   justify-content: center;
   border-radius: 50%;
   padding: 1rem;
+  color: white;
 }
 .main-btn::before {
   content: "";

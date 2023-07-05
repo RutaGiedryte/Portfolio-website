@@ -2,8 +2,10 @@ const sections = document.querySelectorAll('.section');
 const sectionButtons = document.querySelectorAll('.controls');
 const sectionsButton = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
+const themeButton = document.querySelector('.theme-button');
 
 function PageTransitions(){
+    // active buttons
     for(let i = 0; i < sectionButtons.length; i++){
         sectionButtons[i].addEventListener('click', (ev) => {
             let currentButton = document.querySelectorAll('.active-btn');
@@ -12,20 +14,22 @@ function PageTransitions(){
         });
     }
 
+    // active sections
     allSections.addEventListener('click', (ev) => {
         const id = ev.target.dataset.id;
         if(id){
-            /*sectionButtons.forEach( (btn) => {
-                btn.classList.remove('active');
-            });
-            ev.target.classList.add('active');*/
-
             sections.forEach( (section) => {
                 section.classList.remove('active');
             });
             const element = document.getElementById(id);
             element.classList.add('active');
         }
+    });
+
+    // light theme toggle
+    themeButton.addEventListener('click', () => {
+        let element = document.body;
+        element.classList.toggle('light-mode');
     });
 }
 
