@@ -1,12 +1,16 @@
 :root{
-    --color-primary: rgb(104, 104, 138);
-    --color-secondary: rgb(192, 122, 192);
-    --color-white: white;
-    --color-grey: rgb(161, 161, 161);
-    --color-black: rgb(38, 38, 38);
+    --color-primary: #191d2b;
+    --color-secondary: #a25ea2;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
     --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
-}
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  }
+
 
 *{
     margin: 0;
@@ -114,7 +118,7 @@ section{
         padding: 1rem;
         margin: 1rem 0;
         cursor: pointer;
-        background-color: var(--color-grey);
+        background-color: var(--color-grey-4);
         width: 55px;
         height: 55px;
         border-radius: 50%;
@@ -126,6 +130,7 @@ section{
         i{
             font-size: 1.2rem;
             pointer-events: none;
+            color: var(--color-grey-2);
         }
     }
 }
@@ -212,7 +217,7 @@ section{
         grid-gap: 2rem;
         
         .about-item{
-            border: 2px solid var(--color-grey);
+            border: 2px solid var(--color-grey-5);
             border-radius: 5px;
             box-shadow: var(--box-shadow-1);
             transition: all 0.2s ease-in-out;
@@ -235,7 +240,7 @@ section{
                     position: relative;
                     text-transform: uppercase;
                     font-size: 1.2rem;
-                    color: var(--color-grey);
+                    color: var(--color-grey-1);
                     letter-spacing: 2px;
                     &::before{
                         content: '';
@@ -244,7 +249,7 @@ section{
                         top: 15px;
                         width: 2rem;
                         height: 2px;
-                        background-color: var(--color-grey);
+                        background-color: var(--color-grey-5);
                     }
                 }
             }
@@ -258,7 +263,7 @@ section{
             line-height: 2rem;
             padding: 1rem;
             padding-bottom: 2rem;
-            color: var(--color-grey);
+            color: var(--color-grey-1);
         }
         h4{
             font-size: 2rem;
@@ -284,12 +289,12 @@ section{
                 display: flex;
                 align-items: center;
                 .prog-text{
-                    color: var(--color-grey);
+                    color: var(--color-grey-2);
                 }
                 .progress{
                     width: 100%;
                     height: 0.45rem;
-                    background-color: var(--color-grey);
+                    background-color: var(--color-grey-4);
                     margin-left: 1rem;
                     position: relative;
                     span{
@@ -339,7 +344,7 @@ section{
         left: 10%;
         width: 80%;
         height: 2px;
-        background-color: var(--color-grey);
+        background-color: var(--color-grey-5);
         transform: translatey(-100%);
     }
 }
@@ -352,7 +357,7 @@ section{
     .timeline-item{
         position: relative;
         padding-left: 3rem;
-        border-left: 2px solid var(--color-grey);
+        border-left: 2px solid var(--color-grey-5);
         .timeline-icon{
             position: absolute;
             left: -27px;
@@ -368,7 +373,7 @@ section{
         }
         .timeline-duration{
             padding: 0.2rem 0.6rem;
-            background-color: var(--color-grey);
+            background-color: var(--color-grey-5);
             border-radius: 15px;
             display: inline-block;
             font-size: 0.8rem;
@@ -381,13 +386,13 @@ section{
             font-size: 1.3rem;
             font-weight: 600;
             span{
-                color: var(--color-grey);
+                color: var(--color-grey-2);
                 font-weight: 500;
                 font-size: 1.2rem;
             }
         }
         p{
-            color: var(--color-black);
+            color: var(--color-grey-2);
         }
     }
 }
@@ -481,7 +486,7 @@ section{
     margin-top: 4rem;
     .blog{
         position: relative;
-        background-color: var(--color-grey);
+        background-color: var(--color-grey-5);
         border-radius: 5px;
         box-shadow: var(--box-shadow-1);
         transition: all 0.2s ease-in-out;
@@ -522,6 +527,7 @@ section{
                 line-height: 2rem;
                 padding-bottom: 1rem;  
                 font-size: 1rem;  
+                color: var(--color-grey-2);
             }
         }
     }
@@ -571,7 +577,7 @@ section{
                 align-items: center;
                 justify-content: center;
                 color: var(--color-white);
-                background-color: var(--color-grey);
+                background-color: var(--color-grey-5);
                 cursor: pointer;
                 width: 50px;
                 height: 50px;
@@ -602,7 +608,7 @@ section{
                 padding: 0.8rem 1.1rem;
                 outline: none;
                 border: none;
-                background-color: var(--color-grey);
+                background-color: var(--color-grey-5);
                 width: 100%;
                 color: var(--color-white);
                 resize: none;
@@ -688,7 +694,7 @@ section{
             position: absolute;
             top: 50%;
             left: 50%;
-            color: rgb(113, 84, 116);
+            color: var(--color-grey-5);
             transition: all 0.4s ease-in-out;
             z-index: -1;
             transform: translate(-50%, -50%);

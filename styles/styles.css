@@ -1,11 +1,14 @@
 :root {
-  --color-primary: rgb(104, 104, 138);
-  --color-secondary: rgb(192, 122, 192);
-  --color-white: white;
-  --color-grey: rgb(161, 161, 161);
-  --color-black: rgb(38, 38, 38);
+  --color-primary: #191d2b;
+  --color-secondary: #a25ea2;
+  --color-white: #FFFFFF;
+  --color-black: #000;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
 * {
@@ -104,7 +107,7 @@ section {
   padding: 1rem;
   margin: 1rem 0;
   cursor: pointer;
-  background-color: var(--color-grey);
+  background-color: var(--color-grey-4);
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -116,6 +119,7 @@ section {
 .controls .control i {
   font-size: 1.2rem;
   pointer-events: none;
+  color: var(--color-grey-2);
 }
 
 .header-content {
@@ -188,7 +192,7 @@ section {
   grid-gap: 2rem;
 }
 .about-container .right-about .about-item {
-  border: 2px solid var(--color-grey);
+  border: 2px solid var(--color-grey-5);
   border-radius: 5px;
   box-shadow: var(--box-shadow-1);
   transition: all 0.2s ease-in-out;
@@ -213,7 +217,7 @@ section {
   position: relative;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: var(--color-grey);
+  color: var(--color-grey-1);
   letter-spacing: 2px;
 }
 .about-container .right-about .about-item .abt-text .small-text::before {
@@ -223,7 +227,7 @@ section {
   top: 15px;
   width: 2rem;
   height: 2px;
-  background-color: var(--color-grey);
+  background-color: var(--color-grey-5);
 }
 .about-container .left-about {
   padding-right: 5rem;
@@ -233,7 +237,7 @@ section {
   line-height: 2rem;
   padding: 1rem;
   padding-bottom: 2rem;
-  color: var(--color-grey);
+  color: var(--color-grey-1);
 }
 .about-container .left-about h4 {
   font-size: 2rem;
@@ -261,12 +265,12 @@ section {
   align-items: center;
 }
 .about-stats .progress-bars .progress-bar .progress-container .prog-text {
-  color: var(--color-grey);
+  color: var(--color-grey-2);
 }
 .about-stats .progress-bars .progress-bar .progress-container .progress {
   width: 100%;
   height: 0.45rem;
-  background-color: var(--color-grey);
+  background-color: var(--color-grey-4);
   margin-left: 1rem;
   position: relative;
 }
@@ -313,7 +317,7 @@ section {
   left: 10%;
   width: 80%;
   height: 2px;
-  background-color: var(--color-grey);
+  background-color: var(--color-grey-5);
   transform: translatey(-100%);
 }
 
@@ -326,7 +330,7 @@ section {
 .timeline .timeline-item {
   position: relative;
   padding-left: 3rem;
-  border-left: 2px solid var(--color-grey);
+  border-left: 2px solid var(--color-grey-5);
 }
 .timeline .timeline-item .timeline-icon {
   position: absolute;
@@ -343,7 +347,7 @@ section {
 }
 .timeline .timeline-item .timeline-duration {
   padding: 0.2rem 0.6rem;
-  background-color: var(--color-grey);
+  background-color: var(--color-grey-5);
   border-radius: 15px;
   display: inline-block;
   font-size: 0.8rem;
@@ -357,12 +361,12 @@ section {
   font-weight: 600;
 }
 .timeline .timeline-item h5 span {
-  color: var(--color-grey);
+  color: var(--color-grey-2);
   font-weight: 500;
   font-size: 1.2rem;
 }
 .timeline .timeline-item p {
-  color: var(--color-black);
+  color: var(--color-grey-2);
 }
 
 .portfolio-text {
@@ -442,7 +446,7 @@ section {
 }
 .blog-container .blog {
   position: relative;
-  background-color: var(--color-grey);
+  background-color: var(--color-grey-5);
   border-radius: 5px;
   box-shadow: var(--box-shadow-1);
   transition: all 0.2s ease-in-out;
@@ -486,6 +490,7 @@ section {
   line-height: 2rem;
   padding-bottom: 1rem;
   font-size: 1rem;
+  color: var(--color-grey-2);
 }
 
 .contact-content-container {
@@ -531,7 +536,7 @@ section {
   align-items: center;
   justify-content: center;
   color: var(--color-white);
-  background-color: var(--color-grey);
+  background-color: var(--color-grey-5);
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -562,7 +567,7 @@ section {
   padding: 0.8rem 1.1rem;
   outline: none;
   border: none;
-  background-color: var(--color-grey);
+  background-color: var(--color-grey-5);
   width: 100%;
   color: var(--color-white);
   resize: none;
@@ -635,7 +640,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: rgb(113, 84, 116);
+  color: var(--color-grey-5);
   transition: all 0.4s ease-in-out;
   z-index: -1;
   transform: translate(-50%, -50%);
